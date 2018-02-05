@@ -1,0 +1,23 @@
+{
+  "name": "todo-app-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/loader.js",
+  "scripts": {
+    "dev": "nodemon",
+    "production": "pm2 start src/loader.js --name todo-app",
+    "production_monit": "pm2 monit",
+    "production_stop": "pm2 stop todo-app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2",
+    "mongoose": "^5.0.3",
+    "node-restful": "^0.2.6",
+    "nodemon": "^1.14.12",
+    "pm2": "^2.9.3"
+  }
+}
